@@ -2,6 +2,7 @@ connection: "looker-dcl-data"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/user_lkml.dashboard.lookml"
 
 datagroup: naga_project_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
