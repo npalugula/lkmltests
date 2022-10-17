@@ -30,6 +30,11 @@ view: order_items {
     type: number
     sql: ${TABLE}.sale_price ;;
   }
+  dimension: bold_order_id {
+    type: number
+    sql: ${TABLE}.sale_price ;;
+    html: <b>{{value}}</b> ;;
+  }
 
   measure: count {
     type: count

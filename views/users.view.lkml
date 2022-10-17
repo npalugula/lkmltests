@@ -39,6 +39,10 @@ view: users {
     sql: ${TABLE}.created_at ;;
   }
 
+  dimension: initialdate {
+    type: string
+    sql: ${TABLE}.created_at ;;
+  }
   dimension: email {
     type: string
     sql: ${TABLE}.email ;;
