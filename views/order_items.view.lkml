@@ -32,7 +32,7 @@ view: order_items {
   }
   dimension: bold_order_id {
     type: number
-    sql: ${TABLE}.sale_price ;;
+    sql: ${TABLE}.order_id ;;
     html: <b>{{value}}</b> ;;
   }
 
