@@ -82,4 +82,8 @@ view: users {
     type: count
     drill_fields: [id, last_name, first_name, orders.count]
   }
+  measure: Is_77548_User {
+    type: number
+   sql: case ${TABLE}.id when 77548 then 1 else 0 end ;;
+  }
 }
