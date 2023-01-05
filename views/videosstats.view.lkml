@@ -59,6 +59,6 @@ view: videosstats {
   }
   measure: Is_Count_morethan_50 {
     type: number
-    sql:  case ${count} > 50 then 1 else 0 end ;;
+    sql:  case when ${count} > 50  then 1 else 0 end ;;
   }
 }
