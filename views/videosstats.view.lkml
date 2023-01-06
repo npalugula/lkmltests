@@ -61,4 +61,9 @@ view: videosstats {
     type: number
     sql:  case when ${count} > 50  then 1 else 0 end ;;
   }
+
+  measure: Is_Likes_morethan_50 {
+    type: number
+    sql:  case when ${likes} > 50  then 1 else 0 end ;;
+  }
 }
